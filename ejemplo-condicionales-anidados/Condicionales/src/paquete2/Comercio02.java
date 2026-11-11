@@ -66,7 +66,7 @@ public class Comercio02 {
                     }
                 }
             }
-        }
+        } 
         
        
         adicionalSeguro = (sueldoBasico * porcentajeSeguro)/100;

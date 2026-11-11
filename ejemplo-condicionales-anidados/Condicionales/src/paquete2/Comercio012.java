@@ -32,6 +32,10 @@ public class Comercio012 {
         double adicionalSeguro;
 
         double sueldoFinal;
+        String nombreEmpresas;
+        
+        System.out.println(" ingrese nombre empresa");
+        nombreEmpresas = entrada.nextLine();
 
         System.out.println("Ingrese el nombre por favor");
         nombre = entrada.nextLine();
@@ -105,7 +109,7 @@ public class Comercio012 {
                 if (productividad >= 80 && productividad < 200) {
                     bono = 100;
                     sueldoFinal = adicionalSeguro + bono + sueldoBasico;
-                    System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"
+                    System.out.printf("Reporte de Empleado %s\n\n"
                             + "Nombres: %s\n"
                             + "Apellidos: %s\n"
                             + "Edad: %d\n"
@@ -115,6 +119,7 @@ public class Comercio012 {
                             + "\tBono: $%.2f\n"
                             + "Adicional del seguro: $%.2f\n\n"
                             + "Sueldo final: $%.2f\n",
+                            nombreEmpresas,
                             nombre,
                             apellido,
                             edad,
@@ -151,7 +156,7 @@ public class Comercio012 {
                         
                         
 
-                    }
+                    } 
                 }
             }
         }
